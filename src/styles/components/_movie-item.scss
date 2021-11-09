@@ -1,0 +1,45 @@
+.movie-item {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  border-radius: 16px;
+  padding: 15px;
+  transition: all 0.5s ease-in-out;
+  background-color: transparent;
+  width: 220px;
+  position: relative;
+  color: black;
+
+  &:hover {
+    box-shadow: 0 0 5px 5px #387c7e7e;
+    cursor: pointer;
+  }
+
+  &__image {
+    width: 100%;
+    height: auto;
+    border-radius: 16px;
+    border: 1px solid lightgray;
+  }
+
+  &__title {
+    margin: 0;
+  }
+
+  &__vote {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    padding: 20px;
+    border-radius: 100%;
+    background-color: yellow;
+    box-shadow: 0 0 2px 2px #c2c577;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    font-family: "Roboto", sans-serif;
+    right: 5px;
+    top: 275px;
+  }
+}

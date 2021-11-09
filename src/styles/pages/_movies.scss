@@ -1,0 +1,17 @@
+.movies {
+  &__container {
+    width: $container;
+    padding: 0 20px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 40px;
+    padding-bottom: 40px;
+
+    @include tablet {
+      width: unset;
+      margin: unset;
+    }
+  }
+}

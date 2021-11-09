@@ -1,0 +1,16 @@
+// utils
+@import "./utils/base";
+@import "./utils/variables";
+@import "./utils/mixins";
+
+// components
+@import "./components/navigation";
+@import "./components/movie-item";
+@import "./components/movie-info";
+@import "./components/movie-review";
+@import "./components/movie-cast";
+@import "./components/search-bar";
+
+// pages
+@import "./pages/home";
+@import "./pages/movies";

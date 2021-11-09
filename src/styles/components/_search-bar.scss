@@ -1,0 +1,83 @@
+.search-bar {
+    width: $container;
+    padding: 0 20px 40px;
+    margin: auto;
+
+    @include tablet {
+      width: unset;
+      
+    }
+
+    &__form {
+        display: flex;
+        gap:30px;
+        justify-content: center;
+    }
+
+    &__input {
+        border:2px solid #387c7e;
+        border-radius: 16px;
+        padding: 10px;
+        outline: unset;
+    }
+
+    &__button{
+        display: block;
+        font-size: 15px;
+        color: orange;
+        padding: 5px 15px;
+        background-color: #333;
+        position: relative;
+        cursor: pointer;
+        text-decoration: none;
+        border-radius: 16px;
+        transition: all 0.3s ease-in-out;
+        overflow: hidden;
+        position: relative;
+        box-shadow: 0 5px 24px 10px #387c7e;
+        outline: unset;
+        border:unset;
+    
+        span {
+          z-index: 5;
+        }
+    
+        span::before {
+          content: "";
+          background-color: aqua;
+          position: absolute;
+          width: 100%;
+          left: 0;
+          top: 0;
+          height: 100%;
+          opacity: 0.2;
+          z-index: 0;
+          transition: all 0.3s 0.2s ease-in-out;
+        }
+        span:after {
+          content: "";
+          background-color: aqua;
+          position: absolute;
+          width: 100%;
+          left: 0;
+          top: 0;
+          height: 100%;
+          opacity: 0.2;
+          z-index: 0;
+          transition: all 0.3s ease-in-out;
+        }
+    
+        &:hover {
+          cursor: pointer;
+          transform: scale(1.1);
+          color: rgb(255, 199, 96);
+    
+          span::before {
+            left: 100%;
+          }
+          span::after {
+            top: -100%;
+          }
+        }
+    }
+}

@@ -1,0 +1,33 @@
+.movie-review {
+  &__container {
+    width: $container;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+    justify-content: center;
+
+    @include tablet {
+      width: unset;
+      
+    }
+  }
+
+  &__card {
+    width: 310px;
+    padding: 21px;
+    height: fit-content;
+    box-shadow: 0 0 24px 10px grey;
+    border-radius: 16px;
+    overflow: hidden;
+  }
+  &__text {
+    max-height: 300px;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 15;
+    -webkit-box-orient: vertical;
+    position: relative;
+  }
+}

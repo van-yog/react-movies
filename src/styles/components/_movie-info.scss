@@ -1,0 +1,56 @@
+.movie-info {
+  display: flex;
+  gap: 50px;
+  width: $container;
+  padding: 20px;
+  margin: auto;
+  font-size: 20px;
+  margin-bottom: 50px;
+
+  @include tablet {
+    width: unset;
+    margin: 0;
+  }
+  @include phone {
+    flex-wrap: wrap;
+  }
+
+  &__title {
+    margin-top: 0;
+  }
+
+  &__image {
+    width: 300px;
+    height: fit-content;
+    border-radius: 16px;
+    box-shadow: 0 5px 20px 3px #387c7e4d;
+
+    @include phone {
+      width: 100px;
+      height: fit-content;
+    }
+  }
+
+  &__information {
+    display: flex;
+    gap: 50px;
+  }
+
+  &__homepage {
+    color: #387c7e;
+    transition: all 0.3s ease-in-out;
+  }
+
+  &__more {
+    margin-top: 40px;
+    display: flex;
+    gap: 40px;
+    font-family: "Monoton", cursive;
+  }
+
+  &__cast,
+  &__revies {
+    font-size: 18px !important;
+    box-shadow: 0 5px 24px 10px #387c7e;
+  }
+}
